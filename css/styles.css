@@ -1,19 +1,37 @@
 
 body {
-  background: linear-gradient(to bottom, #fff, #e6e6e6);
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 2em;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #001f2e, #00141e);
+  color: white;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
 }
-.bandera {
-  width: 120px;
-  margin-bottom: 20px;
+
+.container {
+  position: relative;
+  top: 25%;
+  transform: translateY(-25%);
 }
-h1 {
-  color: #d62828;
+
+.flag {
+  width: 80px;
+  animation: fadeIn 2s ease-out;
 }
-p {
+
+.brand {
+  color: #00e0ff;
+}
+
+.subtitle {
+  margin-top: 10px;
   font-size: 1.2em;
-  color: #333;
+  animation: fadeIn 3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
