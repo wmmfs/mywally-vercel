@@ -1,0 +1,19 @@
+
+body {
+  background: linear-gradient(to bottom, #fff, #e6e6e6);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+}
+.bandera {
+  width: 120px;
+  margin-bottom: 20px;
+}
+h1 {
+  color: #d62828;
+}
+p {
+  font-size: 1.2em;
+  color: #333;
+}
