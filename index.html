@@ -1,47 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MyWally - Intro</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom, #000, #001f3f);
-      color: white;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height: 100vh;
-      overflow: hidden;
-    }
-    h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    p {
-      font-size: 1.2em;
-    }
-    .flag {
-      width: 100px;
-      margin-bottom: 20px;
-      animation: wave 2s infinite;
-    }
-    @keyframes wave {
-      0% { transform: rotate(0deg); }
-      25% { transform: rotate(3deg); }
-      50% { transform: rotate(0deg); }
-      75% { transform: rotate(-3deg); }
-      100% { transform: rotate(0deg); }
-    }
-  </style>
+  <title>MiWally</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <img src="peru-flag.png" class="flag" alt="Peruvian Flag" />
-  <h1>Bienvenido a MyWally</h1>
-  <p>Modo real iniciado 🇵🇪</p>
+  <div class="stars"></div>
+  <div class="container">
+    <h1>Bienvenido a <span class="brand">MyWally</span></h1>
+    <p class="subtitle">Modo real iniciado 🌌</p>
+  </div>
 </body>
 </html>
