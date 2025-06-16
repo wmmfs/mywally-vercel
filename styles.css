@@ -1,46 +1,58 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #010101, #0b3e52);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(180deg, #0D2239 0%, #091E2E 100%);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+.stars {
+  width: 100%;
+  height: 100%;
+  background: transparent url('stars.png') repeat top center;
+  animation: sparkle 15s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+@keyframes sparkle {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
 }
 
 .container {
-    text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  font-size: 3em;
+  margin: 0.3em 0;
 }
 
-.btn {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 30px;
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 1em;
 }
 
-.sub-text {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    opacity: 0.8;
-}
-
-#startBtn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+.quote {
+  margin-top: 2em;
+  font-style: italic;
+  color: #ccc;
 }
